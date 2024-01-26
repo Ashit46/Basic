@@ -9,6 +9,6 @@ public class AppTest {
 	System.out.println("Samdur");
 
         System.out.println("Ashit");
-        System.out.println("My name is ashit samdur");
+        System.out.println("My name is ashit ");
     }
 }
