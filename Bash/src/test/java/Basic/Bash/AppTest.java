@@ -1,6 +1,10 @@
 package Basic.Bash;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AppTest {
     @Test
@@ -8,7 +12,15 @@ public class AppTest {
     {
 	System.out.println("Samdur");
 
-        System.out.println("Ashit");
-        System.out.println("My name is Ashit ");
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver = new ChromeDriver();
+	driver.get("//https:google.com");
+	String title =driver.getTitle();
+	System.out.println(title);
+	
+	
+	
+	
+        
     }
 }
